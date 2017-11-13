@@ -15,7 +15,7 @@ class GmailLoginTest < Test::Unit::TestCase
 
 	def test_login
 		loginBox = @driver.find_element(:id, "Email")
-		loginBox.send_keys("email.address@gmail.com")
+		loginBox.send_keys("email.address1@gmail.com")
 		pwBox = @driver.find_element(:id, "Passwd")
 		pwBox.send_keys("!SuperSecretpassw0rd")
 		signinBtn = @driver.find_element(:id, "signIn")
